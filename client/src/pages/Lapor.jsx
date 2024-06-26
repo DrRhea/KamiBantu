@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Footer from './Footer';
 import Modal from './Modal';
 
 const Lapor = () => {
@@ -47,9 +48,8 @@ const Lapor = () => {
           </div>
         </div>
       </div>
-
-      {/* Modal */}
       <Modal isOpen={modalIsOpen} onClose={closeModal} />
+      <Footer/>
     </div>
   );
 };
