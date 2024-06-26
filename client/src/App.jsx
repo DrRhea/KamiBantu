@@ -5,6 +5,7 @@ import Lapor from './pages/Lapor';
 import FormAnak from './pages/FormAnak'; 
 import FormOrtu from './pages/FormOrtu'; 
 import Lacak from './pages/Lacak';
+import NotFound from './pages/NotFound';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Route path='/lapor/anak' element={<FormAnak/>} />
       <Route path='/lapor/wali' element={<FormOrtu/>} />
       <Route path='/lacak' element={<Lacak/>} /> 
+      <Route path='*' element={<NotFound />} />
     </Routes>
   );
 };
