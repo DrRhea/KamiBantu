@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, useHistory } from 'react-router-dom';
 import Home from './pages/Home';
 import Lapor from './pages/Lapor';
 import FormAnak from './pages/FormAnak'; 

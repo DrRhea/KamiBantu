@@ -20,6 +20,7 @@ const Modal = ({ isOpen, onClose }) => {
           onClick={onClose}
           className="absolute text-gray-600 top-4 right-4 hover:text-gray-800"
         >
+          Close
         </button>
         <h3 className="text-xl font-semibold text-center text-[#60588d]">Pilih Identitas</h3>
         <div className="flex flex-col justify-center mt-8 space-y-4 md:flex-row md:justify-between md:space-y-0 md:space-x-4">
