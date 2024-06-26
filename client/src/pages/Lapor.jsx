@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Footer from './Footer';
 import Modal from './Modal';
+import { Link } from 'react-router-dom';
 
 const Lapor = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -31,12 +32,12 @@ const Lapor = () => {
               >
                 Lapor Segera!
               </button>
-              <a
-                href="#"
+              <Link
+                to="/lacak"
                 className="flex items-center justify-center w-full sm:w-auto rounded-full border border-gray-300 px-8 py-4 text-lg font-semibold text-[#60588d] hover:bg-gray-100"
               >
                 Periksa Status Pelaporan
-              </a>
+              </Link>
             </div>
           </div>
           <div className="order-first w-full mt-10 lg:w-auto lg:flex-none lg:ml-12 lg:order-last lg:mt-0">
@@ -49,7 +50,7 @@ const Lapor = () => {
         </div>
       </div>
       <Modal isOpen={modalIsOpen} onClose={closeModal} />
-      <Footer/>
+      <Footer />
     </div>
   );
 };

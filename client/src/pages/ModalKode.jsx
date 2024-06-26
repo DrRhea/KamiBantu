@@ -1,17 +1,9 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
 import emot from '../assets/emot.png';
 import silang from '../assets/silang.png';
 
 const ModalKode = ({ isOpen, onClose, reportCode }) => {
-  const history = useHistory();
-
   if (!isOpen) return null;
-
-  const handleCekClick = () => {
-    onClose();
-    history.push('/cek');
-  };
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
