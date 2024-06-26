@@ -48,10 +48,9 @@ const FormOrtu = () => {
     const isValid = Object.values(errors).every((val) => !val);
     if (isValid) {
       console.log('Form valid. Kirim data:', formData);
-      // Simulasi pembuatan kode laporan
       const generatedCode = '12345ABC';
       setReportCode(generatedCode);
-      setModalIsOpen(true); // Tampilkan modal setelah sukses submit
+      setModalIsOpen(true); 
     } else {
       console.log('Form belum lengkap. Silakan isi semua form.');
     }

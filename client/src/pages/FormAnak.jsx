@@ -33,7 +33,6 @@ const FormAnak = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validasi form sebelum submit
     const errors = {};
     Object.keys(formData).forEach((key) => {
       if (!formData[key] && key !== 'isAnonym' && key !== 'fileBukti') {
@@ -47,10 +46,10 @@ const FormAnak = () => {
     const isValid = Object.values(errors).every((val) => !val);
     if (isValid) {
       console.log('Form valid. Kirim data:', formData);
-      // Simulasi pembuatan kode laporan
+      //contoh ajaa ini
       const generatedCode = '12345ABC';
       setReportCode(generatedCode);
-      setModalIsOpen(true); // Tampilkan modal setelah sukses submit
+      setModalIsOpen(true); 
     } else {
       console.log('Form belum lengkap. Silakan isi semua form.');
     }

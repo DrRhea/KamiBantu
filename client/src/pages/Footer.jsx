@@ -11,7 +11,7 @@ const Footer = () => {
     >
       <div className="pb-6">
         <a
-          href="#"
+          href="/"
           className="text-sm leading-6 text-gray-600 hover:text-gray-900"
         >
           Beranda
@@ -19,7 +19,7 @@ const Footer = () => {
       </div>
       <div className="pb-6">
         <a
-          href="#"
+          href="/lapor"
           className="text-sm leading-6 text-gray-600 hover:text-gray-900"
         >
           Lapor
@@ -27,7 +27,7 @@ const Footer = () => {
       </div>
       <div className="pb-6">
         <a
-          href="#"
+          href="/lacak"
           className="text-sm leading-6 text-gray-600 hover:text-gray-900"
         >
           Lacak
