@@ -1,18 +1,22 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './pages/Home'
+import { Routes ,Route } from 'react-router-dom';
+import Home from './pages/Home';
 import Lapor from './pages/Lapor';
+import FormAnak from './pages/FormAnak'; 
+import FormOrtu from './pages/FormOrtu'; 
+import Lacak from './pages/Lacak';
+import NotFound from './pages/NotFound';
 
 const App = () => {
   return (
-    <Router>
-      <div>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/lapor" component={Lapor} />
-        </Switch>
-      </div>
-    </Router>
+    <Routes>
+      <Route path='/' element={<Home/>} />
+      <Route path='/lapor' element={<Lapor/>} />
+      <Route path='/lapor/anak' element={<FormAnak/>} />
+      <Route path='/lapor/wali' element={<FormOrtu/>} />
+      <Route path='/lacak' element={<Lacak/>} /> 
+      <Route path='*' element={<NotFound />} />
+    </Routes>
   );
 };
 
