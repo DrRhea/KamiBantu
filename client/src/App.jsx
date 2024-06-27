@@ -6,6 +6,7 @@ import FormAnak from './pages/FormAnak';
 import FormOrtu from './pages/FormOrtu'; 
 import Lacak from './pages/Lacak';
 import NotFound from './pages/NotFound';
+import Dashboard from './pages/Dashboard';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Route path='/lapor/wali' element={<FormOrtu/>} />
       <Route path='/lacak' element={<Lacak/>} /> 
       <Route path='*' element={<NotFound />} />
+      <Route path='dashboard' element={<Dashboard />} />
     </Routes>
   );
 };
