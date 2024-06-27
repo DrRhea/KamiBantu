@@ -19,7 +19,7 @@ const Home = () => {
 
   return (
     <div>
-      <section className="flex flex-col items-center w-full px-2 py-8 mx-auto my-8 bg-white lg:flex-row sm:px-8">
+      <section className="flex flex-col items-center w-full px-2 py-8 mx-auto lg:my-8 bg-white lg:flex-row sm:px-8">
         <div className="items-center w-full px-2 lg:w-1/2 sm:px-8">
           <div className="lg:hidden">
             <div className="flex flex-row items-center justify-between">
