@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Footer from './Footer';
+import Footer from '../Components/Footer';
 import Modal from './Modal';
 import Langkah from './component/Langkah';
 import Statistika from './component/Statistika';
@@ -91,7 +91,6 @@ const Home = () => {
 
         <Testimoni />
         <Faq />
-        <Footer />
       </div>
     </div>
   );

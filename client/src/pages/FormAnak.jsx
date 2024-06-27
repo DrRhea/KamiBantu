@@ -47,7 +47,7 @@ const FormAnak = () => {
     if (isValid) {
       console.log('Form valid. Kirim data:', formData);
       //contoh ajaa ini
-      const generatedCode = '12345ABC';
+      const generatedCode = 'X61Y021S';
       setReportCode(generatedCode);
       setModalIsOpen(true); 
     } else {
