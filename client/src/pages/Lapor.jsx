@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Footer from './Footer';
+import Footer from '../Components/Footer';
 import Modal from './Modal';
 import { Link } from 'react-router-dom';
 
@@ -15,7 +15,7 @@ const Lapor = () => {
   }
 
   return (
-    <div className="px-6 lg:py-24 bg-white sm:px-6 lg:px-8">
+    <div className="px-6 lg:py-24 bg-white sm:px-6 lg:px-8 min-h-screen">
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col items-center lg:flex-row lg:items-start gap-y-10 lg:gap-x-12">
           <div className="max-w-2xl mx-auto text-center lg:text-left lg:mx-0">
@@ -50,7 +50,6 @@ const Lapor = () => {
         </div>
       </div>
       <Modal isOpen={modalIsOpen} onClose={closeModal} />
-      <Footer />
     </div>
   );
 };

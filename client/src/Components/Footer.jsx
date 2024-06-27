@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <div className='p-4 py-24 mx-auto'>
+    <div className='mx-auto'>
         <footer className="bg-white">
-  <div className="px-6 py-20 mx-auto overflow-hidden max-w-7xl sm:py-24 lg:px-8">
+  <div className="px-6 pt-16 pb-4 mx-auto overflow-hidden max-w-7xl sm:pt-4 sm:pb-6 lg:px-8">
     <nav
       className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
       aria-label="Footer"

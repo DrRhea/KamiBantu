@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
-import Footer from './Footer';
+import Footer from '../Components/Footer';
 
 const Lacak = () => {
   const [trackingCode, setTrackingCode] = useState('');
+  const [show, setShow] = useState(false)
+
+  const showToggle = () => {
+    setShow(!show)
+  }
 
   const steps = [
-    { id: 1, status: 'completed', text: 'Laporan Sedang diverifikasi' },
-    { id: 2, status: 'in-progress', text: 'Laporan diterima' },
+    { id: 1, status: 'in-progress', text: 'Laporan Sedang diverifikasi' },
+    { id: 2, status: 'pending', text: 'Laporan diterima' },
     { id: 3, status: 'pending', text: 'Investigasi dan Koordinasi' },
     { id: 4, status: 'pending', text: 'Intervensi Awal dan Proses Hukum' },
     { id: 5, status: 'pending', text: 'Rehabilitasi dan Penutupan Kasus' },
@@ -30,13 +35,13 @@ const Lacak = () => {
               placeholder="MOV7657"
               className="flex-grow px-6 py-4 text-lg focus:outline-none"
             />
-            <button className="bg-[#483D8B] text-white px-8 py-4 text-lg font-semibold hover:bg-[#382D7B] transition duration-300">
+            <button onClick={showToggle} className="bg-[#483D8B] text-white px-8 py-4 text-lg font-semibold hover:bg-[#382D7B] transition duration-300">
               Cek
             </button>
           </div>
         </div>
 
-        <div className="flex justify-center w-full max-w-3xl p-8 bg-white shadow-2xl rounded-2xl">
+        <div className={`justify-center w-full max-w-3xl p-8 bg-white shadow-2xl rounded-2xl ${show ? 'flex' : 'hidden'}`}>
           <div className="w-max">
             {steps.map((step, index) => (
               <div key={step.id} className="flex items-center mb-8 last:mb-0">
