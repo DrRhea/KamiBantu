@@ -48,7 +48,7 @@ const FormOrtu = () => {
     const isValid = Object.values(errors).every((val) => !val);
     if (isValid) {
       console.log('Form valid. Kirim data:', formData);
-      const generatedCode = '12345ABC';
+      const generatedCode = 'Z29A32X0';
       setReportCode(generatedCode);
       setModalIsOpen(true); 
     } else {
