@@ -34,17 +34,14 @@ const Home = () => {
             </h1>
           </div>
           <div className="relative" style={{ paddingTop: '56.25%' }}>
-            {/* <iframe
+            <iframe
               className="absolute inset-0 w-full h-full border border-white rounded-sm"
-              src="https://www.youtube.com/embed/7i2pqbF0Oi0?autoplay=1&si=2IMYQokPJpQ1zlZ2"
+              src="https://www.youtube.com/embed/Www5aeDKnKU?si=O3ysU8iPVhzw2gfx"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-            /> */}
-            <img
-            className="absolute inset-0 w-full h-full border border-white rounded-sm"
-            src={tamnel} alt="" />
+            />
           </div>
         </div>
         <div className="items-center w-full lg:w-1/2 sm:px-8">
